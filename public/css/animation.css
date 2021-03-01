@@ -1,0 +1,157 @@
+@charset "UTF-8";
+#main .sp{ display: none; }
+#main .intro{ width: 100%; height: 100vh;  min-height: 630px; max-height: 800px; padding-top: 55%; position: relative; }
+#main .intro .visual-wrap{ position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden; }
+#main .intro .visual-list{ position: absolute; left: 50%; bottom: 0; z-index: 5; overflow: hidden; }
+#main .intro .visual-list .item{ float: left; transform: translateX(80px); }
+#main .intro .visual-list .item01{ margin-right: 20px; }
+#main .intro .visual-list .item02{ margin-right: 20px; }
+#main .intro .visual-list .item03{ margin-right: 20px; }
+#main .intro .visual-list .item04{ margin-right: 20px; }
+#main .intro .visual-list .item05{ margin-right: 20px; }
+#main .intro .visual-bg{ position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+#main .intro .visual-bg .active-bg,
+#main .intro .visual-bg .idle-bg{ position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+#main .intro .visual-bg .active-bg{ transform: scale(0); z-index: 1; }
+#main .intro .visual-bg .active-bg.bg01,
+#main .intro .visual-bg .idle-bg.bg01{ background-color: #F49687; }
+#main .intro .visual-bg .active-bg.bg02,
+#main .intro .visual-bg .idle-bg.bg02{ background-color: #FFB2DB; }
+#main .intro .visual-bg .active-bg.bg03,
+#main .intro .visual-bg .idle-bg.bg03{ background-color: #3DA44C; }
+#main .intro .visual-bg .active-bg.bg04,
+#main .intro .visual-bg .idle-bg.bg04{ background-color: #8EEBFF; }
+#main .intro .visual-bg .active-bg.bg05,
+#main .intro .visual-bg .idle-bg.bg05{ background-color: #FFDB7E; }
+/*history*/
+#main .point{ width: 100%; height: 700px; position: relative; overflow: hidden;  background-image: url(../img/index/bg_history2.png); background-repeat: round;}
+#main .point .en-body{ position: absolute; left: 50%; margin-left: -520px; top: 105px; z-index: 10; }
+#main .point .en-body .en{ position: relative; z-index: 5; }
+#main .point .en-body .deco{ position: absolute; top: 65%; right: 8%; transform: translate(50%,-50%); }
+#main .point .ttl{ position: absolute; left: 50%; margin-left: -520px; top: 270px; z-index: 10; }
+#main .point .buds{ position: absolute; right: 50%; top: 60px; transform: translateX(50%); z-index: 5; }
+#main .point .bg-list{ position: absolute; left: 50%; bottom: 0; margin-bottom: -86px; overflow: hidden; }
+#main .point .bg-list .item{ float: left; margin-right: 70px; }
+#main .point .list-item{ position: absolute; left: 50%; margin-left: 180px; top: 110px; z-index: 10; }
+#main .point .list-item .item{ padding-left: 32px; background: url(../image/top/point/icon01.png) 0 5px no-repeat; background-size: 21px 18px; position: relative; }
+#main .point .list-item .item+.item{ margin-top: 1.79em; }
+#main .point .list-item .item:nth-child(3){ padding-right: 65px; }
+#main .point .list-item .item .icon{ position: absolute; right: 0; top: 50%; transform: translateY(-50%); border-radius: 50%; overflow: hidden; }
+#main .point .list-item .item .icon::before{ content: ''; position: absolute; left: 0; top: 0; width: 100%; height: 100%; border: 1px solid #ffffff; box-sizing: border-box; border-radius: 50%; }
+#main .point .list-item .item .head{ font-size: 1.2rem; color: #ffffff; font-weight: bold; }
+#main .point .list-item .item .txt{ color: #ffffff; margin-top: 5px; }
+/*footer*/
+#footer{ padding: 80px 0 300px; overflow: hidden; position: relative; background-color: #ffffff; }
+#footer .bg-list{ position: absolute; left: 50%; bottom: 0; overflow: hidden; }
+#footer .bg-list .item{ float: left; margin-right: 20px; }
+
+
+@media screen and (max-width: 860px) {
+	#main .intro{ height: 0; padding-top: 110%;  min-height: inherit;}
+	#main .intro .visual-list{ height: 60%;}
+	#main .intro .visual-list .item{ float: left; height: auto; /*height: 120%;*/ transform: translateX(5vw); }
+	#main .intro .visual-list .item01{ margin-right: 0; width: 100px; }
+	#main .intro .visual-list .item02{ margin-right: 0%; width: 100px; }
+	#main .intro .visual-list .item03{ margin-right: 0%; width: 100px; }
+	#main .intro .visual-list .item04{ margin-right: 0%; width: 100px; }
+	#main .intro .visual-list .item05{ margin-right: 0%; width: 100px; }
+	#main .intro .visual-list .item img{ height: auto; width: 100%; }
+	#main .point{ height: auto; padding: 16% 0 45.33%; }
+	#main .point .en-body{ position: relative; left: 8%; margin-left: 0; top: auto; width: 42.13%; }
+	#main .point .en-body img{ width: 100%; height: auto; }
+	#main .point .en-body .en{ position: relative; z-index: 5; }
+	#main .point .en-body .deco{ width: 55.29%; }
+	#main .point .ttl{ position: relative; left: 8%; margin-left: 0; top: auto; width: 46.16%; margin-top: 9.33%; }
+	#main .point .ttl img{ width: 100%; height: auto; }
+	#main .point .buds{ width: 15.2%; right: 15.2%; top: 0; margin-top: 41.33%; }
+	#main .point .bg-list{ margin-bottom: -15%; }
+	#main .point .bg-list .item{ margin-right: 14.93vw; }
+	#main .point .bg-list .item01{ width: 6.4vw; }
+	#main .point .bg-list .item02{ width: 5.12vw; }
+	#main .point .bg-list .item03{ width: 6.4vw; }
+	#main .point .bg-list .item04{ width: 6.58vw; }
+	#main .point .bg-list .item05{ width: 7.86vw; }
+	#main .point .bg-list .item img{ width: 100%; height: auto; }
+	#main .point .list-item{ position: relative; left: 0; margin-left: 8%; top: auto; width: auto; margin-top: 16%; padding-right: 24%; }
+	#main .point .list-item .item{ padding-left: 24px; background-position: 0 7px; background-size: 15px 13px; }
+	#main .point .list-item .item .icon{ left: 335px; right: auto; width: 55px; }
+	#main .concept .ttl.show+.txt-body{ opacity: 1; transition: opacity 0.5s ease 0.5s; }
+}
+
+@media screen and (max-width: 1170px) {
+	#main .point .list-item{ margin-left: 150px; }
+}
+@media screen and (max-width: 1110px) {
+	#main .point .en-body{ left: 30px; margin-left: 0; }
+	#main .point .ttl{ left: 30px; margin-left: 0; }
+	#main .point .buds{ right: 53%; }
+	#main .point .list-item{ left: auto; right: 30px; margin-left: 0; width: 40%; }
+}
+@media screen and (max-width: 640px) {
+	#main .point .list-item .item .icon{ left: auto; right: 0; top: 0; transform: none; }
+}
+@media screen and (max-width: 480px){
+	#main .intro{ width: 100%; height: 35vh; padding-top: 110%; position: relative; }
+	#main .intro .visual-wrap{ position: absolute; left: 0; top: 0; width: 100%; height: 100%; overflow: hidden;}
+	#main .intro .visual-list{ height: 55%;}
+	#main .intro .visual-list .item{ float: left; height: auto; /*height: 120%;*/ transform: translateX(5vw); }
+	#main .intro .visual-list .item01{ margin-right: 1%; width: 50px; }
+	#main .intro .visual-list .item02{ margin-right: 1%; width: 50px; }
+	#main .intro .visual-list .item03{ margin-right: 1%; width: 50px; }
+	#main .intro .visual-list .item04{ margin-right: 1%; width: 50px; }
+	#main .intro .visual-list .item05{ margin-right: 1%; width: 50px; }
+	#main .point{ width: 100%; height: 420px;}
+	#main .point .bg-list{ left: 80%; bottom: 0; margin-bottom: -12%; overflow: hidden; }
+	#main .point .bg-list .item{ float: left; margin-right: 10vw; }
+	#main .point .buds{ width:20px; left: 10%; top: -470px;transform: translateX(50%); z-index: 5; }
+	#main .point .list-item .item br.pc{ display: none; }
+	#main .point .list-item .item br.sp{ display: block; }
+	#main .point .list-item .item:nth-child(3){ padding-right: 0; }
+}
+
+#main .point .en-body .en{ transform: scale(1.2); opacity: 0; }
+#main .point .en-body.show .en{ transform: scale(1); opacity: 1; transition: transform 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940), opacity 0.5s ease-in; }
+#main .point .en-body .deco{ opacity: 0; animation: rotateIconDeco02 20s linear infinite; }
+#main .point .en-body.show .deco{ opacity: 1; transition: opacity 0.5s ease 0.25s; }
+#main .point .ttl{ opacity: 0; }
+#main .point .ttl.show{ opacity: 1; transition: opacity 0.5s ease 0.4s; }
+#main .point .buds img{ transform: translateY(100%); }
+#main .point .buds.show img{ transform: translateY(0); transition: transform 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940); }
+#main .point .list-item .item{ opacity: 0; }
+#main .point .ttl.show~.list-item .item.show{ opacity: 1; transition: opacity 0.5s ease 0.5s; }
+#main .point .ttl.show~.list-item .item.show~.item{ opacity: 1; transition: opacity 0.5s ease-in; }
+#main .point .ttl.show~.list-item .item.show~.item:nth-child(2){ transition-delay: 0.65s; }
+#main .point .ttl.show~.list-item .item.show~.item:nth-child(3){ transition-delay: 0.8s; }
+#main .lineup .ttl{ opacity: 0; }
+#main .lineup.show .ttl{ opacity: 1; transition: opacity 0.5s ease; }
+#main .lineup .list-item .item::before{ content: ''; width: 130%; height: 100%; position: absolute; right: 0; top: 0; background-color: #ffffff; z-index: 50; transform: translateX(15%) skewX(-26deg); }
+#main .lineup .list-item .item.show::before{ transform: translateX(120%) skewX(-26deg); transition: transform 1s ease; }
+
+/*animation*/
+#main .intro .visual-bg .active-bg.show01{ animation: visualBgSlide01 0.3s cubic-bezier(.31,.01,.99,.76) forwards; transform-origin: left center; }
+#main .intro .visual-bg .active-bg.show02{ animation: visualBgSlide02 0.3s cubic-bezier(.31,.01,.99,.76) forwards; transform-origin: center top; }
+#main .intro .visual-bg .active-bg.show03{ animation: visualBgSlide03 0.3s cubic-bezier(.31,.01,.99,.76) forwards; transform-origin: right center; }
+#main .intro .visual-bg .active-bg.show04{ animation: visualBgSlide04 0.3s cubic-bezier(.31,.01,.99,.76) forwards; transform-origin: center bottom; }
+#main .intro::before{ content: ''; width: 100%; height: 100%; position: absolute; right: 0; top: 0; background-color: #ffffff; z-index: 50; }
+#main .intro.show::before{ width: 0; transition: width 0.5s cubic-bezier(1.000, 0.000, 0.000, 1.000); }
+#main .intro .visual-list .item img{ transform: translateY(100%); }
+#main .intro .visual-list .item.show img{ transform: translateY(0); transition: transform 0.5s ease; }
+
+
+/*keyframe*/
+@keyframes visualBgSlide01{
+	0%{ transform: scaleX(0); }
+	100%{ transform: scaleX(1); }
+}
+@keyframes visualBgSlide02{
+	0%{ transform: scaleY(0); }
+	100%{ transform: scaleY(1); }
+}
+@keyframes visualBgSlide03{
+	0%{ transform: scaleX(0); }
+	100%{ transform: scaleX(1); }
+}
+@keyframes visualBgSlide04{
+	0%{ transform: scaleY(0); }
+	100%{ transform: scaleY(1); }
+}

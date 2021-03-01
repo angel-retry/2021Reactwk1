@@ -1,0 +1,159 @@
+html{
+    height: auto;
+    margin: auto;
+    font-size: 62.5%; 
+}
+
+/*header*/
+.h_logo{ position: absolute; width: 100%; z-index: 2;}
+.logo{ position: absolute; margin-top: 60px; right: 5.5%; z-index: 2; transition: all 0.5s;}
+.logo:hover { transform: scale(1.1);}
+.headertext{
+    position: absolute;
+    margin-top: 50px;
+    height: 36rem;
+    top: 70px;
+    right: 10%;
+    z-index: 5;
+}
+
+/*history*/
+.history{ margin-top: -37px;}
+.content_title{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 18rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+}
+.content_title_mid{ display: none;}
+.bg_history1_box{ margin-top: 50px; display: flex; justify-content: center;}
+.bg_history1{ width: 750px; height: 350px; background: rgba(196, 196, 196, 0.3);}
+.img_pockybox{ position: absolute; width: 900px; margin-top: 40px; margin-left: -795px; transition: all 0.5s;}
+.img_pockybox:hover,.img_pockybox:focus { transform: translateY(-0.4em) scale(1.1);}
+.content_text{
+    position: absolute;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    font-size: 2.6rem;
+    margin-top: 380px;
+    margin-left: -90px;
+}
+.bg_history2_box{ margin-top: 200px;}
+h2{ font-size: 3.8rem !important;}
+.history_title{
+    position: absolute;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: bold;
+    width: 480px;
+    line-height: 5.2rem;
+    top: 1800px;
+    margin-left: 120px;
+}
+.bg_history2_box p{
+    position: absolute;
+    width: 450px;
+    font-weight: normal;
+    top: 1350px;
+    margin-left: 920px;
+}
+
+/*flavor*/
+.flavor a:hover{
+    text-decoration: none;
+}
+.flavor_title{ display: flex; justify-content: space-between;}
+.flavor_title .content_title{ margin-left: 130px;}
+.img_smallcontent{ height: 35px; margin-top: 100px; margin-right: 100px;}
+.flavor_text h2{ font-family: 'Roboto', sans-serif; font-weight: bold;}
+.flavor_text p{ font-family: 'Noto Sans JP', sans-serif; font-weight: bold; font-size: 1.6rem;}
+.flavorbox{ width: 150px; height: 220px; margin-top: 10px; margin-bottom: 10px;}
+.flavor_content{ display: flex;}
+.flavor_text{ margin-top: 90px;}
+
+.chocolate{ background-color: #FF394A; transition: all 0.5s;}
+.chocolate .flavor_text{ color: white; margin-left: 153px;}
+.chocolate .flavorbox{ width: 145px; margin-left: 18%;}
+.strawberry{ background-color: #FFB2DB; transition: all 0.5s;}
+.strawberry .flavor_text{ color: #EC6360; margin-left: 150px;}
+.strawberry .flavorbox{ margin-left: 15.8%;}
+.matcha{ background-color: #3DA44C; transition: all 0.5s;}
+.matcha .flavor_text{ color: white; margin-left: 170px;}
+.matcha .flavorbox{ margin-left: 22%;}
+.potato{ background-color: #8EEBFF; transition: all 0.5s;}
+.potato .flavor_text{ color: #D83F4C; margin-left: 170px;}
+.potato .flavorbox{ margin-left: 23%;}
+.melon{ background-color: #FFDB7E; transition: all 0.5s;}
+.melon .flavor_text{ color: #4CBD5D; margin-left: 170px;}
+.melon .flavorbox{ margin-left: 24.3%;}
+
+.chocolate:hover,.strawberry:hover,.matcha:hover,.potato:hover,.melon:hover{ padding-right: 25px; transform-origin:0; transform:scale(0.95,0.9);}
+
+/*footer*/
+.img_color{ margin-top: 100px; display: flex; justify-content: center;}
+.color_1{width:25px;height: 25px;background: #FF5462;margin-right: 10px;}
+.color_2{width:25px;height: 25px;background: #FFB2DB;margin-right: 10px;}
+.color_3{width:25px;height: 25px;background: #3DA44C;margin-right: 10px;}
+.color_4{width:25px;height: 25px;background: #8EEBFF;margin-right: 10px;}
+.color_5{width:25px;height: 25px;background: #FFDB7E;}
+footer .container h3{font-weight: bold;text-align: center;margin-top: 15px;}
+.btn_footer{display: flex;justify-content: center;margin-top: 20px;}
+.btn_fb,.btn_ig,.btn_twitter{margin-right: 30px;}
+.btn_fb:hover,.btn_ig:hover,.btn_twitter:hover,.btn_yt:hover{opacity: 0.5;}
+footer .container p{color:#858585; text-align: center; margin-top: 20px;}
+
+@media screen and (max-width: 768px) {
+    .introduce{ margin-top: -10px!important;}
+    .content_title{ display: none;}
+    .content_title_mid{ display: block; font-family: 'Roboto', sans-serif; font-weight: bold; font-size: 10rem;
+                        letter-spacing: 0.1rem; line-height: 10rem; text-align: left;}
+    .history{ margin-top: -12px;}
+    .content_title{ font-size: 9.5rem;}
+    .bg_history1_box{ margin-top: 50px; justify-content: flex-end;}
+    .bg_history1{ width: 600px; height: 300px;}
+    .img_pockybox{ width: 650px; margin-top: 55px; margin-left: -10px;}
+    .content_text{ font-size: 2rem; margin-top: 340px; margin-right: 70px;}
+}
+
+@media screen and (max-width:320px){
+    /*header*/
+    .logo{ height: 3.2rem;}
+    .headertext{ margin-top: 30px; height: 18rem; right: 12%;}
+
+    /*history*/
+    .content_title{ display: none;}
+    .content_title_mid{ margin-top: 8px; font-size: 6rem; line-height: 6rem;}
+    .bg_history1{ margin-top:-20px; width: 250px; height: 150px; margin-left: 70px;}
+    .img_pockybox{width: 290px; margin-top: 10px; margin-left: 0;}
+    .content_text{ font-size: 1.4rem; width: 260px; margin-top: 160px; left: 120px;}
+    .bg_history2_box{ margin-top: 160px; max-width: 320px;}
+    h2{ font-size: 2.4rem !important;}
+    #main .point .buds.show img{ margin-top:350px; width:70px; height:500px;}
+    .history_title{ width: 180px; font-size: 1.8rem!important; line-height: 2.8rem; top: 850px; margin-left: 130px;}
+    .bg_history2_box p{ width: 180px; font-size: 1rem; top: 790px; margin-left: 5px;}
+
+    /*flavor*/
+    .flavor_title{ margin-top: 0px;}
+    .flavor_title .content_title{ font-size: 2.4rem!important; margin-left: 500px;}
+    .img_smallcontent{ height: 18px; margin-top: 50px; margin-left: 190px; margin-bottom: 10px;}
+    .flavor_text h2{ font-size: 1.4rem!important;}
+    .flavor_text p{ width:84px; -webkit-transform:scale(0.7); margin-left: -12px;}
+    .flavorbox{ width: 45px!important; height: 65px!important; margin-top: 10px!important;}
+    .flavor_text{ margin-top: 25px; margin-bottom: 10px;}
+
+    .chocolate img{ width: 140px; height: 70px; margin-top: 5px;}
+    .chocolate .flavor_text{ margin-left: 20px;}
+    .chocolate .flavorbox{ width: 145px; margin-left: 7%;}
+    .strawberry img{ width: 140px; height: 70px; margin-top: 5px;}
+    .strawberry .flavor_text{ margin-left: 20px;}
+    .strawberry .flavorbox{ margin-left: 4%;}
+    .matcha img{ width: 140px; height: 70px; margin-top: 5px;}
+    .matcha .flavor_text{ margin-left: 20px;}
+    .matcha .flavorbox{ margin-left: 10%;}
+    .potato img{ width: 140px; height: 70px; margin-top: 5px;}
+    .potato .flavor_text{ margin-left: 20px;}
+    .potato .flavorbox{ margin-left: 10.0%;}
+    .melon img{ width: 140px; height: 70px; margin-top: 5px;}
+    .melon .flavor_text{ margin-left: 20px;}
+    .melon .flavorbox{ margin-left: 11%;}
+}
